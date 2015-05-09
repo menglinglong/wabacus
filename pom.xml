@@ -23,6 +23,16 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+	<repositories>
+		<repository>
+			<id>osc</id>
+			<url>http://maven.oschina.net/content/groups/public/</url>
+		</repository>
+        <repository>
+            <id>osc3</id>
+            <url>http://maven.oschina.net/content/repositories/thirdparty/</url>
+        </repository>
+	</repositories>
 	<scm>
 		<connection>scm:svn:http://wabacus.googlecode.com/svn/</connection>
 		<developerConnection>scm:svn:https://wabacus.googlecode.com/svn/</developerConnection>
@@ -217,18 +227,31 @@
 			<version>10.2.0.4.0</version>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>db2</groupId>
-			<artifactId>db2jcc</artifactId>
-			<version>db2-9</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>db2</groupId>
-			<artifactId>db2jcc_license_cu</artifactId>
-			<version>db2-9</version>
-			<scope>provided</scope>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>db2</groupId>-->
+			<!--<artifactId>db2jcc</artifactId>-->
+			<!--<version>db2-9</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>db2</groupId>-->
+			<!--<artifactId>db2jcc_license_cu</artifactId>-->
+			<!--<version>db2-9</version>-->
+			<!--<scope>provided</scope>-->
+		<!--</dependency>-->
+        <dependency>
+            <groupId>com.ibm.db2</groupId>
+            <artifactId>db2jcc</artifactId>
+            <version>9.1</version>
+            <classifier>jar</classifier>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.db2</groupId>
+            <artifactId>db2jcc_license_cu</artifactId>
+            <version>9.1</version>
+            <scope>provided</scope>
+        </dependency>
 
 		<dependency>
 			<groupId>javax.servlet</groupId>
